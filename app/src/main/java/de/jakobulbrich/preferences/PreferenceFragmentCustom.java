@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceFragmentCompat;
+import android.support.v7.preference.PreferenceManager;
+import android.widget.Toast;
 
 /**
  * The Preference Fragment which shows the Preferences as a List and handles the Dialogs for the
@@ -11,7 +13,8 @@ import android.support.v7.preference.PreferenceFragmentCompat;
  *
  * @author Jakob Ulbrich
  */
-public class PreferenceFragmentCustom extends PreferenceFragmentCompat {
+public class PreferenceFragmentCustom extends PreferenceFragmentCompat
+        implements PreferenceManager.OnPreferenceTreeClickListener {
 
     /**
      * {@inheritDoc}
@@ -20,6 +23,12 @@ public class PreferenceFragmentCustom extends PreferenceFragmentCompat {
     public void onCreatePreferences(Bundle bundle, String s) {
         // Load the Preferences from the XML file
         addPreferencesFromResource(R.xml.app_preferences);
+    }
+
+    @Override
+    public boolean onPreferenceTreeClick(Preference preference) {
+        Toast.makeText(getContext(), preference.getKey(), Toast.LENGTH_SHORT).show();
+        return super.onPreferenceTreeClick(preference);
     }
 
     /**
