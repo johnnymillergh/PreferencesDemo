@@ -1,3 +1,8 @@
+# Repository Description
+
+This repository is a copy of [jakobulbrich/preferences-demo](https://github.com/jakobulbrich/preferences-demo "jakobulbrich/preferences-demo"), and I have modified some codes. Thank [Jakob Ulbrich](https://github.com/jakobulbrich) for providing such an amazing tutorial! 
+
+----------
 # Preferences Demo
 
 The project files of my tutorial series **Building an Android Settings Screen - _Fixing and Extending the android.support.v7.preference Library_** on Medium.
@@ -14,3 +19,14 @@ The project files of my tutorial series **Building an Android Settings Screen - 
 _**Note 1:** Google messed up the paddings of the list items with the v24.0.0 version of the support library (on devices below API 21)._
 
 _**Note 2:** Google changed the required id for custom layouts for PreferenceFragmentCompat in the update from revision 23.4.0 (R.id.list\_container) to 24.0.0 (android.R.id.list\_container). Android Studio says that the new id requires API 24, but it also works on older APIs._
+
+## 简体中文翻译版本的教程
+
+[创建 Android 设置界面 (第一部分)](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/0502/7901.html "创建 Android 设置界面 (第一部分)")
+
+[创建 Android 设置界面 (第二部分)](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/0503/7903.html "创建 Android 设置界面 (第二部分)")
+
+[创建 Android 设置界面 (第三部分)](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/0721/8221.html "创建 Android 设置界面 (第三部分)")
+
+[创建 Android 设置界面 (第四部分)](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/0721/8233.html "创建 Android 设置界面 (第四部分)")
+
